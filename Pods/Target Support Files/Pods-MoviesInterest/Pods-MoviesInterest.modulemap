@@ -1,0 +1,6 @@
+framework module Pods_MoviesInterest {
+  umbrella header "Pods-MoviesInterest-umbrella.h"
+
+  export *
+  module * { export * }
+}

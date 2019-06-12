@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SwipableMovie" customModule="MoviesInterest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ratingIcon" translatesAutoresizingMaskIntoConstraints="NO" id="b7p-71-ml6">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="517.5"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="b7p-71-ml6" secondAttribute="height" multiplier="0.8:1" id="PCN-Mj-TKR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="TfO-wm-ocF" appends="YES" id="2Ib-KL-yXH"/>
+                    </connections>
+                </imageView>
+                <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9t-WW-fcc">
+                    <rect key="frame" x="0.0" y="517.5" width="414" height="376.5"/>
+                    <color key="backgroundColor" red="0.10313168913125992" green="0.10322485119104385" blue="0.10829409211874008" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7.1 / 10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh9-Pn-2H5">
+                    <rect key="frame" x="331" y="482" width="68" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="Esr-Ty-9bN"/>
+                        <constraint firstAttribute="height" constant="21" id="nqc-rq-d4q"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgl-OK-w7k">
+                    <rect key="frame" x="0.0" y="427" width="414" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.15322110056877136" green="0.16770139336585999" blue="0.19600763916969299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="b7p-71-ml6" firstAttribute="baseline" secondItem="Hh9-Pn-2H5" secondAttribute="firstBaseline" constant="19.5" id="1AV-e4-bL0"/>
+                <constraint firstItem="F9t-WW-fcc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2jS-tO-NAn"/>
+                <constraint firstAttribute="bottom" secondItem="F9t-WW-fcc" secondAttribute="bottom" id="O7U-zf-tPQ"/>
+                <constraint firstAttribute="bottom" secondItem="F9t-WW-fcc" secondAttribute="bottom" constant="2" id="RBL-kz-DKo"/>
+                <constraint firstAttribute="trailing" secondItem="b7p-71-ml6" secondAttribute="trailing" id="VT6-Tu-ZY0"/>
+                <constraint firstItem="F9t-WW-fcc" firstAttribute="top" secondItem="b7p-71-ml6" secondAttribute="bottom" id="Vsx-6J-wbh"/>
+                <constraint firstItem="b7p-71-ml6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WED-ig-hKA"/>
+                <constraint firstItem="Hh9-Pn-2H5" firstAttribute="trailing" secondItem="b7p-71-ml6" secondAttribute="trailing" constant="-15" id="Wrg-ir-85v"/>
+                <constraint firstItem="b7p-71-ml6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dnh-Oa-RjL"/>
+                <constraint firstAttribute="trailing" secondItem="F9t-WW-fcc" secondAttribute="trailing" id="kpS-Vw-x9S"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                    <real key="value" value="0.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                    <size key="value" width="5" height="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="keyPath">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="mainImageView" destination="b7p-71-ml6" id="xdb-nO-Tlv"/>
+                <outlet property="movieDescription" destination="F9t-WW-fcc" id="b0G-V1-9Gk"/>
+                <outlet property="movieTitle" destination="Sgl-OK-w7k" id="9bD-BY-XUh"/>
+                <outlet property="voteAverage" destination="Hh9-Pn-2H5" id="dQW-E9-q7o"/>
+            </connections>
+            <point key="canvasLocation" x="33.333333333333336" y="153.34821428571428"/>
+        </view>
+        <swipeGestureRecognizer direction="right" id="TfO-wm-ocF">
+            <connections>
+                <action selector="swipeDetected:" destination="iN0-l3-epB" id="nwC-nG-kld"/>
+            </connections>
+        </swipeGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ratingIcon" width="25" height="25"/>
+    </resources>
+</document>
