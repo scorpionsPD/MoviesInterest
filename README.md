@@ -3,3 +3,4 @@ App for latest, popular, upcoming and top-rated movies information along with se
 
 # External Libraries
 used YoutubePlayer-in-WKWebView to play trailers
+
